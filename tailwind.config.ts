@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,33 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Portfolio specific colors
+				slate: {
+					900: '#0f172a',
+					800: '#1e293b',
+					700: '#334155',
+					600: '#475569',
+				},
+				sky: {
+					400: '#38bdf8',
+				},
+				emerald: {
+					500: '#10b981',
+				},
+				yellow: {
+					400: '#facc15',
+				},
+				cyan: {
+					400: '#22d3ee',
+					500: '#06b6d4',
 				}
+			},
+			fontFamily: {
+				'poppins': ['Poppins', 'sans-serif'],
+				'inter': ['Inter', 'sans-serif'],
+				'fira-code': ['Fira Code', 'monospace'],
+				'open-sans': ['Open Sans', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +111,26 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-10px)' }
+				},
+				'glow': {
+					'0%, 100%': { boxShadow: '0 0 20px rgba(56, 189, 248, 0.5)' },
+					'50%': { boxShadow: '0 0 30px rgba(56, 189, 248, 0.8)' }
+				},
+				'terminal-blink': {
+					'0%, 50%': { opacity: '1' },
+					'51%, 100%': { opacity: '0' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 6s ease-in-out infinite',
+				'glow': 'glow 2s ease-in-out infinite alternate',
+				'terminal-blink': 'terminal-blink 1s infinite'
 			}
 		}
 	},

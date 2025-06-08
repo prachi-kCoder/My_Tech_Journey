@@ -1,0 +1,144 @@
+
+import { useState } from 'react';
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+
+const ProjectsSection = () => {
+  const [activeFilter, setActiveFilter] = useState('All');
+  
+  const projects = [
+    {
+      title: "AI-Powered Healthcare Diagnosis",
+      description: "Machine learning model for early detection of diseases using medical imaging with 95% accuracy.",
+      tags: ["AI", "TensorFlow", "Computer Vision", "Healthcare"],
+      category: "AI",
+      impact: "Helping doctors diagnose 2x faster",
+      link: "#"
+    },
+    {
+      title: "Real-time Disaster Management System",
+      description: "Full-stack platform connecting emergency services with affected populations during natural disasters.",
+      tags: ["React", "Node.js", "Socket.io", "MongoDB"],
+      category: "Social Impact", 
+      impact: "Used by 3 municipalities",
+      link: "#"
+    },
+    {
+      title: "Algorithmic Trading Bot",
+      description: "Automated trading system using machine learning for market prediction and risk management.",
+      tags: ["Python", "ML", "Finance", "APIs"],
+      category: "AI",
+      impact: "15% average monthly returns",
+      link: "#"
+    },
+    {
+      title: "Student Learning Platform",
+      description: "MERN stack application for personalized learning with progress tracking and mentorship features.",
+      tags: ["MERN", "GraphQL", "JWT", "Redis"],
+      category: "Full-Stack",
+      impact: "500+ active students",
+      link: "#"
+    },
+    {
+      title: "Smart City Traffic Optimization",
+      description: "IoT and AI-based solution for reducing traffic congestion and improving urban mobility.",
+      tags: ["IoT", "Python", "TensorFlow", "Data Analytics"],
+      category: "Social Impact",
+      impact: "30% reduction in traffic delays",
+      link: "#"
+    },
+    {
+      title: "Competitive Programming Trainer",
+      description: "Platform for algorithmic problem solving with automated testing and performance analytics.",
+      tags: ["React", "Express", "PostgreSQL", "Docker"],
+      category: "Full-Stack",
+      impact: "1000+ problems solved",
+      link: "#"
+    }
+  ];
+
+  const categories = ['All', 'AI', 'Full-Stack', 'Social Impact'];
+  
+  const filteredProjects = activeFilter === 'All' 
+    ? projects 
+    : projects.filter(project => project.category === activeFilter);
+
+  return (
+    <section id="projects" className="py-20">
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-poppins font-bold mb-4">
+            <span className="gradient-text">Featured Projects</span>
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            Real-world applications showcasing AI innovation, full-stack development, and social impact
+          </p>
+        </div>
+
+        <div className="flex justify-center mb-12">
+          <div className="flex flex-wrap gap-4">
+            {categories.map((category) => (
+              <Button
+                key={category}
+                variant={activeFilter === category ? "default" : "outline"}
+                onClick={() => setActiveFilter(category)}
+                className={`${
+                  activeFilter === category 
+                    ? 'bg-sky-400 text-slate-900' 
+                    : 'border-sky-400 text-sky-400 hover:bg-sky-400 hover:text-slate-900'
+                }`}
+              >
+                {category}
+              </Button>
+            ))}
+          </div>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {filteredProjects.map((project, index) => (
+            <div key={index} className="neo-card p-6 hover:scale-105 transition-all duration-300 group">
+              <div className="mb-4">
+                <h3 className="text-xl font-poppins font-semibold mb-2 group-hover:text-sky-400 transition-colors">
+                  {project.title}
+                </h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  {project.description}
+                </p>
+              </div>
+
+              <div className="flex flex-wrap gap-2 mb-4">
+                {project.tags.map((tag, tagIndex) => (
+                  <Badge 
+                    key={tagIndex}
+                    variant="secondary"
+                    className="bg-slate-700 text-foreground text-xs"
+                  >
+                    {tag}
+                  </Badge>
+                ))}
+              </div>
+
+              <div className="flex items-center justify-between">
+                <div className="text-sm">
+                  <span className="text-emerald-500 font-medium">Impact: </span>
+                  <span className="text-muted-foreground">{project.impact}</span>
+                </div>
+                <Button size="sm" variant="ghost" className="text-sky-400 hover:text-sky-300">
+                  View →
+                </Button>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="text-center mt-12">
+          <Button size="lg" variant="outline" className="border-sky-400 text-sky-400 hover:bg-sky-400 hover:text-slate-900">
+            View All Projects on GitHub
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ProjectsSection;
