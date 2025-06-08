@@ -63,7 +63,7 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Portfolio specific colors
+				// Portfolio specific colors with violet additions
 				slate: {
 					900: '#0f172a',
 					800: '#1e293b',
@@ -82,6 +82,11 @@ export default {
 				cyan: {
 					400: '#22d3ee',
 					500: '#06b6d4',
+				},
+				violet: {
+					400: '#a78bfa',
+					500: '#8b5cf6',
+					600: '#7c3aed',
 				}
 			},
 			fontFamily: {

@@ -1,12 +1,13 @@
 
 import { Button } from "@/components/ui/button";
+import { Link } from 'react-router-dom';
 
 const MentorshipSection = () => {
   const mentorshipStats = [
     { number: "100+", label: "Students Mentored", color: "text-sky-400" },
     { number: "50+", label: "Blog Articles", color: "text-emerald-500" },
     { number: "25+", label: "YouTube Videos", color: "text-yellow-400" },
-    { number: "95%", label: "Success Rate", color: "text-cyan-400" }
+    { number: "95%", label: "Success Rate", color: "violet-accent" }
   ];
 
   const resources = [
@@ -37,38 +38,38 @@ const MentorshipSection = () => {
   ];
 
   return (
-    <section id="mentorship" className="py-20">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-poppins font-bold mb-4">
+    <section id="mentorship" className="py-16 sm:py-20">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl font-poppins font-bold mb-4">
             <span className="gradient-text">Mentorship & Community</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto">
             Empowering the next generation of developers through guidance, resources, and hands-on support
           </p>
         </div>
 
-        <div className="grid md:grid-cols-4 gap-6 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mb-12 sm:mb-16">
           {mentorshipStats.map((stat, index) => (
-            <div key={index} className="glass-card p-6 text-center hover:scale-105 transition-transform duration-300">
-              <div className={`text-4xl font-bold mb-2 ${stat.color}`}>
+            <div key={index} className="glass-card p-4 sm:p-6 text-center hover:scale-105 transition-transform duration-300">
+              <div className={`text-2xl sm:text-4xl font-bold mb-2 ${stat.color}`}>
                 {stat.number}
               </div>
-              <div className="text-sm text-muted-foreground">
+              <div className="text-xs sm:text-sm text-muted-foreground">
                 {stat.label}
               </div>
             </div>
           ))}
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
+        <div className="grid sm:grid-cols-2 gap-6 sm:gap-8 mb-12 sm:mb-16">
           {resources.map((resource, index) => (
-            <div key={index} className="neo-card p-6 hover:scale-105 transition-transform duration-300">
+            <div key={index} className="neo-card p-4 sm:p-6 hover:scale-105 transition-transform duration-300">
               <div className="flex items-start justify-between mb-4">
-                <h3 className="text-xl font-poppins font-semibold text-foreground">
+                <h3 className="text-lg sm:text-xl font-poppins font-semibold text-foreground">
                   {resource.title}
                 </h3>
-                <span className="text-xs bg-sky-400 text-slate-900 px-2 py-1 rounded-full font-medium">
+                <span className="text-xs bg-gradient-to-r from-sky-400 to-violet-500 text-slate-900 px-2 py-1 rounded-full font-medium">
                   {resource.type}
                 </span>
               </div>
@@ -79,7 +80,7 @@ const MentorshipSection = () => {
                 <span className="text-emerald-500 text-sm font-medium">
                   {resource.engagement}
                 </span>
-                <Button size="sm" variant="ghost" className="text-sky-400 hover:text-sky-300">
+                <Button size="sm" variant="ghost" className="violet-accent">
                   Read More →
                 </Button>
               </div>
@@ -88,18 +89,20 @@ const MentorshipSection = () => {
         </div>
 
         <div className="text-center space-y-8">
-          <div className="glass-card p-8 max-w-3xl mx-auto">
-            <h3 className="text-2xl font-poppins font-semibold mb-4 text-sky-400">
+          <div className="glass-card p-6 sm:p-8 max-w-3xl mx-auto">
+            <h3 className="text-xl sm:text-2xl font-poppins font-semibold mb-4 violet-accent">
               🚀 Ready to Level Up Your Career?
             </h3>
-            <p className="text-muted-foreground mb-6 leading-relaxed">
+            <p className="text-muted-foreground mb-6 leading-relaxed text-sm sm:text-base">
               Join my mentorship program and get personalized guidance on competitive programming, 
               full-stack development, AI/ML projects, and career advancement strategies.
             </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <Button size="lg" className="bg-sky-400 hover:bg-sky-500 text-slate-900 font-medium">
-                Book 1-on-1 Session
-              </Button>
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <Link to="/mentorship">
+                <Button size="lg" className="w-full sm:w-auto bg-gradient-to-r from-sky-400 to-violet-500 hover:from-sky-500 hover:to-violet-600 text-slate-900 font-medium">
+                  Explore Mentorship Hub
+                </Button>
+              </Link>
               <Button size="lg" variant="outline" className="border-emerald-500 text-emerald-500 hover:bg-emerald-500 hover:text-slate-900">
                 Join Discord Community
               </Button>

@@ -75,10 +75,18 @@
   }
   
   .gradient-text {
-    @apply bg-gradient-to-r from-sky-400 to-emerald-500 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-sky-400 via-violet-400 to-emerald-500 bg-clip-text text-transparent;
   }
   
   .tech-glow {
     @apply shadow-lg shadow-sky-400/20 border-sky-400/30;
+  }
+  
+  .violet-accent {
+    @apply text-violet-400 hover:text-violet-300 transition-colors;
+  }
+  
+  .violet-glow {
+    @apply shadow-lg shadow-violet-400/20 border-violet-400/30;
   }
 }
