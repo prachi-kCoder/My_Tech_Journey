@@ -54,12 +54,18 @@ const HeroSection = () => {
                 <br />
                 <span className="gradient-text">AI Engineer</span>
               </h1>
-              <p className="text-lg sm:text-xl text-muted-foreground font-open-sans leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                Software Engineer passionate about <span className="text-sky-400">AI</span>, 
-                <span className="text-emerald-500"> Competitive Programming</span>, 
-                <span className="text-yellow-400"> Full-Stack Development</span>, and 
-                <span className="violet-accent"> Mentoring</span> the next generation.
-              </p>
+              <div className="space-y-3">
+                <p className="text-base sm:text-lg text-muted-foreground font-open-sans">
+                  <span className="text-sky-400">Software Engineer</span> | 
+                  <span className="text-emerald-500"> AI Enthusiast</span> | 
+                  <span className="text-yellow-400"> Full-Stack Developer</span> | 
+                  <span className="text-violet-400"> DevOps Practitioner</span> | 
+                  <span className="text-cyan-400"> CP Explorer</span>
+                </p>
+                <p className="text-lg sm:text-xl text-muted-foreground font-open-sans leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                  Building intelligent systems, scalable platforms, and empowering tech communities.
+                </p>
+              </div>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -73,16 +79,16 @@ const HeroSection = () => {
 
             <div className="grid grid-cols-3 gap-4 pt-4 max-w-md mx-auto lg:mx-0">
               <div className="text-center">
-                <div className="text-xl sm:text-2xl font-bold text-sky-400">1500+</div>
+                <div className="text-xl sm:text-2xl font-bold text-sky-400">950+</div>
                 <div className="text-xs sm:text-sm text-muted-foreground">Codeforces Rating</div>
               </div>
               <div className="text-center">
-                <div className="text-xl sm:text-2xl font-bold text-emerald-500">50+</div>
-                <div className="text-xs sm:text-sm text-muted-foreground">Projects Built</div>
+                <div className="text-xl sm:text-2xl font-bold text-emerald-500">950+</div>
+                <div className="text-xs sm:text-sm text-muted-foreground">Problems Solved</div>
               </div>
               <div className="text-center">
-                <div className="text-xl sm:text-2xl font-bold violet-accent">100+</div>
-                <div className="text-xs sm:text-sm text-muted-foreground">Students Mentored</div>
+                <div className="text-xl sm:text-2xl font-bold violet-accent">200+</div>
+                <div className="text-xs sm:text-sm text-muted-foreground">Days Streak</div>
               </div>
             </div>
           </div>

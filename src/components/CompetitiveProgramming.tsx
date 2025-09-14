@@ -2,42 +2,46 @@
 const CompetitiveProgramming = () => {
   const stats = [
     {
-      platform: "Codeforces",
-      rating: "1534",
-      rank: "Specialist",
-      solved: "800+",
-      color: "text-sky-400"
-    },
-    {
-      platform: "LeetCode", 
-      rating: "1850",
-      rank: "Knight", 
-      solved: "500+",
-      color: "text-yellow-400"
+      platform: "LeetCode",
+      rating: "Top 15%",
+      rank: "750+ Solved",
+      solved: "750+",
+      color: "text-yellow-400",
+      url: "https://leetcode.com/u/PrachiKumari/"
     },
     {
       platform: "CodeChef",
-      rating: "1680",
-      rank: "4 Star",
-      solved: "300+", 
-      color: "text-emerald-500"
+      rating: "1431",
+      rank: "2 Star",
+      solved: "40+ Contests", 
+      color: "text-emerald-500",
+      url: "https://www.codechef.com/users/buffy_vine_36"
     },
     {
-      platform: "AtCoder",
-      rating: "1200",
-      rank: "Brown",
-      solved: "150+",
-      color: "text-cyan-400"
+      platform: "Codeforces",
+      rating: "950",
+      rank: "Newbie",
+      solved: "100+",
+      color: "text-sky-400",
+      url: "https://codeforces.com/profile/PrachiKCoder"
+    },
+    {
+      platform: "GeeksforGeeks",
+      rating: "200+ Solved",
+      rank: "Consistent",
+      solved: "200+",
+      color: "text-cyan-400",
+      url: "https://www.geeksforgeeks.org/user/visionso0lp/"
     }
   ];
 
   const achievements = [
-    "🏆 ACM-ICPC Regionals Finalist",
-    "🥈 Google Code Jam Round 2",
-    "🥉 Facebook Hacker Cup Round 1",
-    "⭐ 200+ days streak on LeetCode",
-    "📈 Top 5% global ranking on Codeforces",
-    "🎯 Solved 1500+ algorithmic problems"
+    "🎓 Vigyan Vidushi Scholar - Excellence in STEM",
+    "🏆 Top 30 Girls Selected for TIFR Mumbai CS Training Program",
+    "⭐ LeetCode 200+ Days Streak - Consistent Problem Solving",
+    "🔥 GeeksforGeeks 200+ Days Streak - Daily Practice",
+    "💪 40+ CodeChef Contests Participated - Competitive Spirit",
+    "👑 ICPC Algo Queen Participant - Algorithmic Excellence"
   ];
 
   return (
@@ -54,17 +58,25 @@ const CompetitiveProgramming = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {stats.map((stat, index) => (
-            <div key={index} className="glass-card p-6 text-center hover:scale-105 transition-transform duration-300">
-              <h3 className={`text-2xl font-poppins font-bold mb-2 ${stat.color}`}>
+            <a 
+              key={index} 
+              href={stat.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glass-card p-6 text-center hover:scale-105 transition-transform duration-300 block group"
+            >
+              <h3 className={`text-2xl font-poppins font-bold mb-2 ${stat.color} group-hover:underline`}>
                 {stat.platform}
               </h3>
               <div className="space-y-2">
                 <div className="text-3xl font-bold text-foreground">{stat.rating}</div>
                 <div className="text-sm text-muted-foreground">{stat.rank}</div>
                 <div className="text-lg font-semibold text-emerald-500">{stat.solved}</div>
-                <div className="text-xs text-muted-foreground">Problems Solved</div>
+                <div className="text-xs text-muted-foreground">
+                  {stat.platform === "CodeChef" ? "Contests" : "Problems Solved"}
+                </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
 
@@ -87,14 +99,27 @@ const CompetitiveProgramming = () => {
             <h3 className="text-2xl font-poppins font-semibold mb-6 text-emerald-500">
               📊 Problem Categories Mastered
             </h3>
+            <div className="mb-6">
+              <a 
+                href="https://cses.fi/user/338585" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-2 text-sky-400 hover:text-sky-300 transition-colors group"
+              >
+                <span className="font-semibold">CSES Problem Set Progress</span>
+                <span className="group-hover:translate-x-1 transition-transform">→</span>
+              </a>
+            </div>
             <div className="space-y-4">
               {[
-                { category: "Dynamic Programming", level: "95%" },
-                { category: "Graph Theory", level: "90%" },
-                { category: "Data Structures", level: "95%" },
-                { category: "Number Theory", level: "85%" },
-                { category: "Greedy Algorithms", level: "90%" },
-                { category: "Tree Algorithms", level: "88%" }
+                { category: "Dynamic Programming", level: "85%" },
+                { category: "Graph Theory", level: "80%" },
+                { category: "Data Structures", level: "88%" },
+                { category: "Sorting & Searching", level: "90%" },
+                { category: "Greedy Algorithms", level: "82%" },
+                { category: "Tree Algorithms", level: "78%" },
+                { category: "String Algorithms", level: "75%" },
+                { category: "Mathematics", level: "70%" }
               ].map((skill, index) => (
                 <div key={index}>
                   <div className="flex justify-between mb-2">
