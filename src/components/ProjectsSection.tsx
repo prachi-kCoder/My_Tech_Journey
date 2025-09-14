@@ -29,7 +29,7 @@ const ProjectsSection = () => {
       tags: ["Python", "AI", "Data Science", "Cloud"],
       category: "AI",
       impact: "Unified oceanographic data analysis",
-      link: "#"
+      link: "https://github.com/prachi-kCoder/SIH-2025-OCEANIC-DATA-SYNC-/tree/main"
     },
     {
       title: "Nexus.ai",
@@ -40,12 +40,28 @@ const ProjectsSection = () => {
       link: "https://ai-stream-x.vercel.app/"
     },
     {
-      title: "Student Learning Platform",
-      description: "MERN stack application for personalized learning with progress tracking and mentorship features.",
-      tags: ["MERN", "GraphQL", "JWT", "Redis"],
+      title: "EcoExchange",
+      description: "EcoExchange tackles the urgent global challenge of waste mismanagement and unsustainable consumption. This platform reimagines the lifecycle of everyday goods—empowering users to resell, repair, upcycle, or donate items with the support of AI-powered recommendations, pricing, and matchmaking.",
+      tags: ["MERN", "AI", "Sustainability", "React"],
       category: "Full-Stack",
-      impact: "500+ active students",
-      link: "#"
+      impact: "Circular economy platform",
+      link: "https://github.com/prachi-kCoder/EcoExchange"
+    },
+    {
+      title: "AgriIntel",
+      description: "Full stack project to empower farmers for disease prediction and crop prediction and enhance the crop yield through intelligent agricultural insights.",
+      tags: ["React", "Node.js", "AI", "Agriculture"],
+      category: "Full-Stack",
+      impact: "Empowering farmers with AI",
+      link: "https://agribuzzz.onrender.com/"
+    },
+    {
+      title: "MindBloom",
+      description: "MindBloom is an innovative project designed to support neurodiverse children—especially those navigating ADHD, ASD (Autism Spectrum Disorder), and dyslexia. Through intelligent audio support, interactive learning games, and diagnostic assistance, MindBloom ensures no child is left behind.",
+      tags: ["React", "AI", "Accessibility", "Education"],
+      category: "Social Impact",
+      impact: "Supporting neurodiverse children",
+      link: "https://mind-bloom-app-git-main-prachi-kumaris-projects-194ed928.vercel.app/"
     },
     {
       title: "Smart City Traffic Optimization",

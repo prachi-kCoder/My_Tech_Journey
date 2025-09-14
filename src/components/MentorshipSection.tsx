@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 const MentorshipSection = () => {
   const mentorshipStats = [
     { number: "100+", label: "Students Mentored", color: "text-sky-400" },
-    { number: "50+", label: "Blog Articles", color: "text-emerald-500" },
-    { number: "25+", label: "YouTube Videos", color: "text-yellow-400" },
+    { number: "GDG", label: "On-Campus Dev Lead", color: "text-emerald-500" },
+    { number: "50+", label: "Blog Articles", color: "text-yellow-400" },
     { number: "95%", label: "Success Rate", color: "violet-accent" }
   ];
 

@@ -49,7 +49,7 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="space-y-6 lg:space-y-8 text-center lg:text-left">
             <div className="space-y-4">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-poppins font-bold leading-tight">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-poppins font-bold leading-tight">
                 <span className="text-foreground">Hi, I'm a</span>
                 <br />
                 <span className="gradient-text">Software Engineer specializing in AI</span>
@@ -88,11 +88,12 @@ const HeroSection = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button size="lg" className="bg-gradient-to-r from-sky-400 to-violet-500 hover:from-sky-500 hover:to-violet-600 text-slate-900 font-medium px-6 sm:px-8">
+              <Button 
+                size="lg" 
+                className="bg-gradient-to-r from-sky-400 to-violet-500 hover:from-sky-500 hover:to-violet-600 text-slate-900 font-medium px-6 sm:px-8"
+                onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+              >
                 View Projects
-              </Button>
-              <Button size="lg" variant="outline" className="border-violet-400 text-violet-400 hover:bg-violet-400 hover:text-slate-900 px-6 sm:px-8">
-                Get Mentorship
               </Button>
             </div>
 
@@ -112,7 +113,10 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div className="flex justify-center lg:justify-end lg:pl-12">
+          <div className="flex flex-col justify-center lg:justify-end lg:pl-12 items-center lg:items-end space-y-4">
+            <div className="text-xl sm:text-2xl font-poppins font-bold gradient-text text-center lg:text-right">
+              Driven by Purpose. Defined by Code.
+            </div>
             <TerminalWidget />
           </div>
         </div>

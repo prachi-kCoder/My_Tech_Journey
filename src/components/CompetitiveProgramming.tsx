@@ -97,7 +97,7 @@ const CompetitiveProgramming = () => {
 
           <div className="neo-card p-8">
             <h3 className="text-2xl font-poppins font-semibold mb-6 text-emerald-500">
-              📊 Problem Categories Mastered
+              📊 Problem Sheets Mastered
             </h3>
             <div className="mb-6">
               <a 
@@ -111,29 +111,60 @@ const CompetitiveProgramming = () => {
               </a>
             </div>
             <div className="space-y-4">
-              {[
-                { category: "Dynamic Programming", level: "85%" },
-                { category: "Graph Theory", level: "80%" },
-                { category: "Data Structures", level: "88%" },
-                { category: "Sorting & Searching", level: "90%" },
-                { category: "Greedy Algorithms", level: "82%" },
-                { category: "Tree Algorithms", level: "78%" },
-                { category: "String Algorithms", level: "75%" },
-                { category: "Mathematics", level: "70%" }
-              ].map((skill, index) => (
-                <div key={index}>
-                  <div className="flex justify-between mb-2">
-                    <span className="text-sm font-medium">{skill.category}</span>
-                    <span className="text-sm text-muted-foreground">{skill.level}</span>
-                  </div>
-                  <div className="w-full bg-slate-700 rounded-full h-2">
-                    <div 
-                      className="bg-gradient-to-r from-sky-400 to-emerald-500 h-2 rounded-full transition-all duration-1000"
-                      style={{ width: skill.level }}
-                    ></div>
-                  </div>
+              <a 
+                href="https://github.com/prachi-kCoder/STRIVER-SDE-SHEET"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block p-4 bg-slate-700/50 rounded-lg hover:bg-slate-600/50 transition-colors group"
+              >
+                <div className="flex justify-between items-center">
+                  <span className="font-semibold text-sky-400 group-hover:text-sky-300">Striver SDE Sheet</span>
+                  <span className="text-xs text-muted-foreground">Complete Solutions</span>
                 </div>
-              ))}
+                <p className="text-xs text-muted-foreground mt-1">Complete solutions with detailed explanations</p>
+              </a>
+              
+              <div className="p-4 bg-slate-700/50 rounded-lg">
+                <div className="flex justify-between items-center">
+                  <span className="font-semibold text-emerald-500">Neetcode 150</span>
+                  <span className="text-xs text-muted-foreground">In Progress</span>
+                </div>
+                <p className="text-xs text-muted-foreground mt-1">Essential coding interview problems</p>
+              </div>
+              
+              <div className="p-4 bg-slate-700/50 rounded-lg">
+                <div className="flex justify-between items-center">
+                  <span className="font-semibold text-yellow-400">Blind75</span>
+                  <span className="text-xs text-muted-foreground">Completed</span>
+                </div>
+                <p className="text-xs text-muted-foreground mt-1">Must-know problems for interviews</p>
+              </div>
+              
+              <a 
+                href="https://github.com/prachi-kCoder/CSES-BYTES"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block p-4 bg-slate-700/50 rounded-lg hover:bg-slate-600/50 transition-colors group"
+              >
+                <div className="flex justify-between items-center">
+                  <span className="font-semibold text-violet-400 group-hover:text-violet-300">CSES Problem Set</span>
+                  <span className="text-xs text-muted-foreground">Solutions Available</span>
+                </div>
+                <p className="text-xs text-muted-foreground mt-1">Competitive programming problem set</p>
+              </a>
+              
+              <a 
+                href="https://github.com/prachi-kCoder/AlgorithmicFoundations"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block p-4 bg-slate-700/50 rounded-lg hover:bg-slate-600/50 transition-colors group"
+              >
+                <div className="flex justify-between items-center">
+                  <span className="font-semibold text-cyan-400 group-hover:text-cyan-300">AlgorithmicFoundations</span>
+                  <span className="text-xs text-muted-foreground">Own Curated Sheet</span>
+                </div>
+                <p className="text-xs text-muted-foreground mt-1">Curated sheet covering all DSA variations</p>
+              </a>
             </div>
           </div>
         </div>

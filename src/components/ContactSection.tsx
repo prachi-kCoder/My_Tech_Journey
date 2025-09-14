@@ -5,37 +5,25 @@ const ContactSection = () => {
   const socialLinks = [
     {
       name: "GitHub",
-      url: "#",
+      url: "https://github.com/prachi-kCoder",
       icon: "🐙",
       description: "View my code and contributions"
     },
     {
       name: "LinkedIn", 
-      url: "#",
+      url: "https://www.linkedin.com/in/prachi-kumari-498287291/",
       icon: "💼",
       description: "Connect professionally"
     },
     {
-      name: "Discord",
-      url: "#", 
-      icon: "💬",
-      description: "Join the community"
-    },
-    {
-      name: "YouTube",
-      url: "#",
-      icon: "📺", 
-      description: "Watch tutorials and talks"
-    },
-    {
       name: "Email",
-      url: "mailto:your.email@example.com",
+      url: "mailto:prachikumari.corp@gmail.com",
       icon: "📧",
       description: "Direct communication"
     },
     {
       name: "Twitter",
-      url: "#",
+      url: "https://x.com/thexPrachi",
       icon: "🐦",
       description: "Follow my thoughts and updates"
     }
@@ -53,7 +41,7 @@ const ContactSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {socialLinks.map((link, index) => (
             <a 
               key={index}

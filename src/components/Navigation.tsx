@@ -31,8 +31,8 @@ const Navigation = () => {
     }`}>
       <div className="container mx-auto px-4 sm:px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-xl sm:text-2xl font-poppins font-bold gradient-text">
-            Driven by Purpose. Defined by Code.
+          <div className="text-lg sm:text-xl font-poppins font-bold gradient-text">
+            Portfolio
           </div>
           
           {/* Desktop Navigation */}

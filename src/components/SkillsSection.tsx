@@ -6,7 +6,7 @@ const SkillsSection = () => {
     {
       title: "AI & Machine Learning",
       color: "text-sky-400",
-      skills: ["Python", "TensorFlow", "PyTorch", "Scikit-learn", "OpenCV", "NLP", "Computer Vision", "Deep Learning"]
+      skills: ["Python", "TensorFlow", "PyTorch", "Scikit-learn", "OpenCV", "NLP", "Computer Vision", "Deep Learning", "FastAPI", "Flask"]
     },
     {
       title: "Full-Stack Development", 
