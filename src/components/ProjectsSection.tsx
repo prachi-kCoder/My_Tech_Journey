@@ -8,12 +8,12 @@ const ProjectsSection = () => {
   
   const projects = [
     {
-      title: "AI-Powered Healthcare Diagnosis",
-      description: "Machine learning model for early detection of diseases using medical imaging with 95% accuracy.",
-      tags: ["AI", "TensorFlow", "Computer Vision", "Healthcare"],
+      title: "Ai-Curewell",
+      description: "Unleash your health potential with our app! Enter your symptoms for smart disease predictions using advanced machine learning. Get tailored advice, precautions, and medications, plus easily find nearby hospitals and book appointments.",
+      tags: ["AI", "Machine Learning", "Healthcare", "React"],
       category: "AI",
-      impact: "Helping doctors diagnose 2x faster",
-      link: "#"
+      impact: "Smart health predictions & hospital booking",
+      link: "https://ai-curewell-clientside.onrender.com/"
     },
     {
       title: "Real-time Disaster Management System",
@@ -24,12 +24,20 @@ const ProjectsSection = () => {
       link: "#"
     },
     {
-      title: "Algorithmic Trading Bot",
-      description: "Automated trading system using machine learning for market prediction and risk management.",
-      tags: ["Python", "ML", "Finance", "APIs"],
+      title: "OCEARA",
+      description: "AI-Driven Unified Data Platform for Oceanographic, Fisheries, and Molecular Biodiversity Insights. Designed as a cloud-ready, modular system with automated pipelines to ingest and standardize high-volume, heterogeneous datasets—including oceanographic sensor data, eDNA, and otolith morphology.",
+      tags: ["Python", "AI", "Data Science", "Cloud"],
       category: "AI",
-      impact: "15% average monthly returns",
+      impact: "Unified oceanographic data analysis",
       link: "#"
+    },
+    {
+      title: "Nexus.ai",
+      description: "Real-time AI Trend Tracking: Stay updated with curated AI news and trends from across the globe. AI Startup Spotlights and personalized recommendations. AIStreamX adapts to your interests, providing tailored content and suggestions to keep you informed and ahead of the curve.",
+      tags: ["Next.js", "AI", "Real-time", "News API"],
+      category: "AI",
+      impact: "Real-time AI trend insights",
+      link: "https://ai-stream-x.vercel.app/"
     },
     {
       title: "Student Learning Platform",
@@ -123,7 +131,12 @@ const ProjectsSection = () => {
                   <span className="text-emerald-500 font-medium">Impact: </span>
                   <span className="text-muted-foreground">{project.impact}</span>
                 </div>
-                <Button size="sm" variant="ghost" className="text-sky-400 hover:text-sky-300">
+                <Button 
+                  size="sm" 
+                  variant="ghost" 
+                  className="text-sky-400 hover:text-sky-300"
+                  onClick={() => project.link !== "#" && window.open(project.link, '_blank')}
+                >
                   View →
                 </Button>
               </div>
@@ -132,7 +145,12 @@ const ProjectsSection = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Button size="lg" variant="outline" className="border-sky-400 text-sky-400 hover:bg-sky-400 hover:text-slate-900">
+          <Button 
+            size="lg" 
+            variant="outline" 
+            className="border-sky-400 text-sky-400 hover:bg-sky-400 hover:text-slate-900"
+            onClick={() => window.open('https://github.com/prachi-kCoder?tab=repositories', '_blank')}
+          >
             View All Projects on GitHub
           </Button>
         </div>

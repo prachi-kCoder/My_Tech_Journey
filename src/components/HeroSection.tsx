@@ -50,9 +50,9 @@ const HeroSection = () => {
           <div className="space-y-6 lg:space-y-8 text-center lg:text-left">
             <div className="space-y-4">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-poppins font-bold leading-tight">
-                <span className="text-foreground">Hi, I'm</span>
+                <span className="text-foreground">Hi, I'm a</span>
                 <br />
-                <span className="gradient-text">AI Engineer</span>
+                <span className="gradient-text">Software Engineer specializing in AI</span>
               </h1>
               <div className="space-y-3">
                 <p className="text-base sm:text-lg text-muted-foreground font-open-sans">
@@ -65,6 +65,25 @@ const HeroSection = () => {
                 <p className="text-lg sm:text-xl text-muted-foreground font-open-sans leading-relaxed max-w-2xl mx-auto lg:mx-0">
                   Building intelligent systems, scalable platforms, and empowering tech communities.
                 </p>
+              </div>
+            </div>
+
+            {/* Vigyan Vidushi Program Section */}
+            <div className="bg-gradient-to-r from-violet-900/20 to-sky-900/20 rounded-lg p-4 sm:p-6 border border-violet-500/20">
+              <div className="flex flex-col lg:flex-row gap-4 lg:gap-6 items-center">
+                <div className="w-20 h-20 sm:w-24 sm:h-24 bg-gradient-to-br from-violet-400 to-sky-400 rounded-full flex items-center justify-center text-slate-900 font-bold text-lg sm:text-xl flex-shrink-0">
+                  VV
+                </div>
+                <div className="text-center lg:text-left">
+                  <h3 className="text-lg sm:text-xl font-poppins font-semibold violet-accent mb-2">
+                    Vigyan Vidushi Scholar - TIFR Mumbai
+                  </h3>
+                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                    Selected among top 30 girls for the Computer Science Training Program at TIFR Mumbai. 
+                    Expanded my network with IIT professors who taught us Game Theory, Coding Theory, and Cryptography. 
+                    Collaborated on projects and group activities - a transformative learning experience.
+                  </p>
+                </div>
               </div>
             </div>
 
