@@ -1,12 +1,14 @@
 
 import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Menu } from 'lucide-react';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,10 +19,23 @@ const Navigation = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+  const navigateToSection = (sectionId: string) => {
+    if (location.pathname === '/') {
+      // If on home page, scroll to section
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // If on other page, navigate to home with hash
+      navigate(`/#${sectionId}`);
+      // Small delay to ensure navigation completes before scrolling
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
     }
     setIsMobileMenuOpen(false);
   };
@@ -31,32 +46,35 @@ const Navigation = () => {
     }`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4">
         <div className="flex items-center justify-between">
-          <div className="text-lg sm:text-xl lg:text-2xl font-poppins font-bold gradient-text">
+          <Link 
+            to="/" 
+            className="text-lg sm:text-xl lg:text-2xl font-poppins font-bold gradient-text hover:opacity-80 transition-opacity"
+          >
             Portfolio
-          </div>
+          </Link>
           
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-4 xl:space-x-6">
             <button 
-              onClick={() => scrollToSection('home')}
+              onClick={() => navigateToSection('home')}
               className="text-foreground hover:text-sky-400 transition-colors font-medium"
             >
               Home
             </button>
             <button 
-              onClick={() => scrollToSection('skills')}
+              onClick={() => navigateToSection('skills')}
               className="text-foreground hover:text-sky-400 transition-colors font-medium"
             >
               Skills
             </button>
             <button 
-              onClick={() => scrollToSection('projects')}
+              onClick={() => navigateToSection('projects')}
               className="text-foreground hover:text-sky-400 transition-colors font-medium"
             >
               Projects
             </button>
             <button 
-              onClick={() => scrollToSection('cp')}
+              onClick={() => navigateToSection('cp')}
               className="text-foreground hover:text-sky-400 transition-colors font-medium"
             >
               CP Stats
@@ -68,7 +86,7 @@ const Navigation = () => {
               Mentorship Hub
             </Link>
             <button 
-              onClick={() => scrollToSection('contact')}
+              onClick={() => navigateToSection('contact')}
               className="text-foreground hover:text-sky-400 transition-colors font-medium"
             >
               Contact
@@ -97,25 +115,25 @@ const Navigation = () => {
           <div className="lg:hidden mt-4 pb-4">
             <div className="flex flex-col space-y-4">
               <button 
-                onClick={() => scrollToSection('home')}
+                onClick={() => navigateToSection('home')}
                 className="text-left text-foreground hover:text-sky-400 transition-colors font-medium"
               >
                 Home
               </button>
               <button 
-                onClick={() => scrollToSection('skills')}
+                onClick={() => navigateToSection('skills')}
                 className="text-left text-foreground hover:text-sky-400 transition-colors font-medium"
               >
                 Skills
               </button>
               <button 
-                onClick={() => scrollToSection('projects')}
+                onClick={() => navigateToSection('projects')}
                 className="text-left text-foreground hover:text-sky-400 transition-colors font-medium"
               >
                 Projects
               </button>
               <button 
-                onClick={() => scrollToSection('cp')}
+                onClick={() => navigateToSection('cp')}
                 className="text-left text-foreground hover:text-sky-400 transition-colors font-medium"
               >
                 CP Stats
@@ -128,7 +146,7 @@ const Navigation = () => {
                 Mentorship Hub
               </Link>
               <button 
-                onClick={() => scrollToSection('contact')}
+                onClick={() => navigateToSection('contact')}
                 className="text-left text-foreground hover:text-sky-400 transition-colors font-medium"
               >
                 Contact
