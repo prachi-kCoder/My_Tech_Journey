@@ -29,14 +29,14 @@ const Navigation = () => {
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
       isScrolled ? 'bg-slate-900/95 backdrop-blur-md border-b border-slate-800' : 'bg-transparent'
     }`}>
-      <div className="container mx-auto px-4 sm:px-6 py-4">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4">
         <div className="flex items-center justify-between">
-          <div className="text-lg sm:text-xl font-poppins font-bold gradient-text">
+          <div className="text-lg sm:text-xl lg:text-2xl font-poppins font-bold gradient-text">
             Portfolio
           </div>
           
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
+          <div className="hidden lg:flex items-center space-x-4 xl:space-x-6">
             <button 
               onClick={() => scrollToSection('home')}
               className="text-foreground hover:text-sky-400 transition-colors font-medium"
@@ -75,8 +75,8 @@ const Navigation = () => {
             </button>
           </div>
 
-          <div className="flex items-center space-x-4">
-            <Button className="hidden sm:block bg-gradient-to-r from-sky-400 to-violet-500 hover:from-sky-500 hover:to-violet-600 text-slate-900 font-medium">
+          <div className="flex items-center space-x-3 sm:space-x-4">
+            <Button className="hidden sm:block text-sm lg:text-base bg-gradient-to-r from-sky-400 to-violet-500 hover:from-sky-500 hover:to-violet-600 text-slate-900 font-medium px-4 lg:px-6">
               Download Resume
             </Button>
             
