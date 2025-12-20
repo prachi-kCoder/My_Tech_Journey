@@ -16,11 +16,11 @@ const ProjectsSection = () => {
       link: "https://ai-curewell-clientside.onrender.com/"
     },
     {
-      title: "Real-time Disaster Management System",
-      description: "Full-stack platform connecting emergency services with affected populations during natural disasters.",
-      tags: ["React", "Node.js", "Socket.io", "MongoDB"],
-      category: "Social Impact", 
-      impact: "Used by 3 municipalities",
+      title: "Crop-Companion",
+      description: "Real-time disease detection and plant recommendation system based on soil and climate conditions. Helps farmers stay aware of new techniques and technologies to increase crop yield with AI-powered insights.",
+      tags: ["AI", "Machine Learning", "Agriculture", "React"],
+      category: "AI", 
+      impact: "Empowering farmers with real-time insights",
       link: "#"
     },
     {

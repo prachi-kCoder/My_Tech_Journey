@@ -140,6 +140,14 @@ const CompetitiveProgramming = () => {
                 <p className="text-xs text-muted-foreground mt-1">Must-know problems for interviews</p>
               </div>
               
+              <div className="p-4 bg-slate-700/50 rounded-lg">
+                <div className="flex justify-between items-center">
+                  <span className="font-semibold text-orange-400">TLE-Eliminators CP Sheets</span>
+                  <span className="text-xs text-muted-foreground">Upto 1600 Rating</span>
+                </div>
+                <p className="text-xs text-muted-foreground mt-1">Helped build strong logic and algorithmic understanding</p>
+              </div>
+              
               <a 
                 href="https://github.com/prachi-kCoder/CSES-BYTES"
                 target="_blank"
