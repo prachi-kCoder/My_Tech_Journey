@@ -96,7 +96,7 @@ const Navigation = () => {
           <div className="flex items-center space-x-3 sm:space-x-4">
             <Button 
               className="hidden sm:block text-sm lg:text-base bg-gradient-to-r from-sky-400 to-violet-500 hover:from-sky-500 hover:to-violet-600 text-slate-900 font-medium px-4 lg:px-6"
-              onClick={() => window.open('https://drive.google.com/file/d/13fs8UcnEQ5K6HKmOXnebs91sV2EpojKE/view?usp=drive_link', '_blank')}
+              onClick={() => window.open('https://drive.google.com/file/d/1uSqzdtBRwbR_Re479PvJSYodk_0s3J9H/view?usp=sharing', '_blank')}
             >
               View Resume
             </Button>
@@ -156,7 +156,7 @@ const Navigation = () => {
               </button>
               <Button 
                 className="sm:hidden w-full bg-gradient-to-r from-sky-400 to-violet-500 hover:from-sky-500 hover:to-violet-600 text-slate-900 font-medium"
-                onClick={() => window.open('https://drive.google.com/file/d/13fs8UcnEQ5K6HKmOXnebs91sV2EpojKE/view?usp=drive_link', '_blank')}
+                onClick={() => window.open('https://drive.google.com/file/d/1uSqzdtBRwbR_Re479PvJSYodk_0s3J9H/view?usp=sharing', '_blank')}
               >
                 View Resume
               </Button>
