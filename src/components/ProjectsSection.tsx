@@ -21,7 +21,7 @@ const ProjectsSection = () => {
       tags: ["AI", "Machine Learning", "Agriculture", "React"],
       category: "AI", 
       impact: "Empowering farmers with real-time insights",
-      link: "#"
+      link: "https://crop-ai-companion.vercel.app/"
     },
     {
       title: "OCEARA",
