@@ -97,7 +97,7 @@ const HeroSection = () => {
               </Button>
             </div>
 
-            <div className="grid grid-cols-3 gap-4 pt-4 max-w-md mx-auto lg:mx-0">
+            <div className="grid grid-cols-3 gap-4 pt-4 pb-6 max-w-md mx-auto lg:mx-0">
               <div className="text-center">
                 <div className="text-xl sm:text-2xl font-bold text-sky-400">1076</div>
                 <div className="text-xs sm:text-sm text-muted-foreground">Codeforces Rating</div>
