@@ -64,14 +64,6 @@ const ProjectsSection = () => {
       link: "https://mind-bloom-app-git-main-prachi-kumaris-projects-194ed928.vercel.app/"
     },
     {
-      title: "Smart City Traffic Optimization",
-      description: "IoT and AI-based solution for reducing traffic congestion and improving urban mobility.",
-      tags: ["IoT", "Python", "TensorFlow", "Data Analytics"],
-      category: "Social Impact",
-      impact: "30% reduction in traffic delays",
-      link: "#"
-    },
-    {
       title: "Competitive Programming Trainer",
       description: "Platform for algorithmic problem solving with automated testing and performance analytics.",
       tags: ["React", "Express", "PostgreSQL", "Docker"],

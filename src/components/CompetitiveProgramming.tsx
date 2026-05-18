@@ -3,7 +3,7 @@ const CompetitiveProgramming = () => {
   const stats = [
     {
       platform: "LeetCode",
-      rating: "1709",
+      rating: "1796",
       rank: "750+ Solved",
       solved: "750+",
       color: "text-yellow-400",
@@ -19,8 +19,8 @@ const CompetitiveProgramming = () => {
     },
     {
       platform: "Codeforces",
-      rating: "1076",
-      rank: "Newbie",
+      rating: "1272",
+      rank: "Pupil",
       solved: "100+",
       color: "text-sky-400",
       url: "https://codeforces.com/profile/PrachiKCoder"
