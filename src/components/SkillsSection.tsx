@@ -6,22 +6,27 @@ const SkillsSection = () => {
     {
       title: "AI & Machine Learning",
       color: "text-sky-400",
-      skills: ["Python", "TensorFlow", "PyTorch", "Scikit-learn", "OpenCV", "NLP", "Computer Vision", "Deep Learning", "FastAPI", "Flask"]
+      skills: ["Python", "TensorFlow", "PyTorch", "Scikit-learn", "OpenCV", "NLP", "Deep Learning"]
     },
     {
-      title: "Full-Stack Development", 
+      title: "Full-Stack Development",
       color: "text-emerald-500",
-      skills: ["React", "Node.js", "Express", "MongoDB", "PostgreSQL", "TypeScript", "Next.js", "GraphQL"]
+      skills: ["React", "Next.js", "TypeScript", "Node.js", "Express", "FastAPI", "Flask"]
     },
     {
-      title: "Competitive Programming",
-      color: "text-yellow-400", 
-      skills: ["C++", "Data Structures", "Algorithms", "Dynamic Programming", "Graph Theory", "Number Theory"]
+      title: "Databases & APIs",
+      color: "text-violet-400",
+      skills: ["MongoDB", "PostgreSQL", "GraphQL", "REST APIs"]
     },
     {
-      title: "DevOps & Cloud",
+      title: "Programming & DSA",
+      color: "text-yellow-400",
+      skills: ["C++", "Python", "Data Structures", "Algorithms", "Dynamic Programming", "Graph Theory"]
+    },
+    {
+      title: "Tools & DevOps",
       color: "text-cyan-400",
-      skills: ["Docker", "AWS", "GCP", "Kubernetes", "CI/CD", "Linux", "Git", "Terraform"]
+      skills: ["Git", "GitHub", "Docker", "AWS", "Linux", "CI/CD"]
     }
   ];
 
